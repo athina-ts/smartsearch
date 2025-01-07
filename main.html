@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Αρχική Σελίδα - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <style>
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 18rem;
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      height: 270;
+      margin-bottom: 30px;
+      background-color: #ffffff; 
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      border-radius: 15px 15px 0 0;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      color: #9c7cfc;
+      margin-bottom: 15px;
+    }
+
+    .card-body p {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Button default color */
+    .btn-card {
+      background-color: #9c7cfc;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      margin-top: auto;
+      font-size: 1em;
+    }
+
+    /* Hover effect for button */
+    .btn-card:hover {
+      background-color: #7a60ff; 
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">SmartSearch.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="general-search.html">Smart Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurants.html">Restaurants Smart Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cosmetics.html">Cosmetics Smart Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="banner text-center py-5">
+    <div class="container">
+      <h2 class="display-4 text-white">Home</h2>
+      <p class="lead text-white">Ανακαλύψτε τις καλύτερες υπηρεσίες αναζήτησης για εστιατόρια, καλλυντικά και πολλά άλλα.</p>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="card-container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Smart Search</h5>
+        <p>Αναζητήστε ό,τι θέλετε στο διαδίκτυο, από άρθρα έως εικόνες και βίντεο.</p>
+        <a href="general-search.html" class="btn-card">Αναζήτηση Τώρα</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Restaurants Smart Search</h5>
+        <p>Βρείτε τα καλύτερα εστιατόρια μέσα απο επιλεμγένες ιστοσελίδες.<p>
+        <a href="restaurants.html" class="btn-card">Αναζήτηση Τώρα</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cosmetics Smart Search</h5>
+        <p>Ανακαλύψτε τα καλύτερα προϊόντα ομορφιάς από επιλεγμένες ιστοσελίδες.<p>
+        <a href="cosmetics.html" class="btn-card">Αναζήτηση Τώρα</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>2024 &copy; SmartSearch.com. Website Designed by Athina Tsironi</p>
+    </div>
+  </footer>
+
+  <!-- External JS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>

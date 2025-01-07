@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Συχνές Ερωτήσεις - FAQ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <style>
+    /* Custom styles for better design */
+    .accordion-button {
+	background-color: #ffffff; /* Clean white background */
+	color: #333333; /* Neutral dark text for readability */
+	font-size: 0.9rem; /* Smaller text for elegance */
+	font-weight: 500; /* Semi-bold for a balanced look */
+	text-align: left;
+	padding: 10px 15px; /* Adjusted padding for a sleeker design */
+	border-radius: 8px; /* Softer, more modern corners */
+	border: 1px solid #e0e0e0; /* Subtle border for separation */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+	cursor: pointer; /* Indicate interactivity */
+	}
+
+	.accordion-button:hover {
+	background-color: #ffffff
+	color: #1a73e8; /* Add a modern accent color for hover */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+	}
+
+	.accordion-button:active {
+	background-color: #9c7cfc; /* Active state feedback */
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+	}
+
+	.accordion-button svg {
+	font-size: 1rem; /* Adjust icon size for better balance */
+	color: inherit; /* Match icon color with text */
+	}
+
+
+    .accordion-button:hover {
+      background-color: #e9ecef;
+    }
+
+    .accordion-body {
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ddd;
+    }
+
+    .accordion-item {
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .accordion-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .accordion-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #e9ecef;
+    }
+
+    /* Remove bullets from lists */
+    .faq-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .faq-list li {
+      margin-bottom: 10px;
+    }
+
+    .faq-list li a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: none;
+    }
+
+    .faq-list li a:hover {
+      color: #5f0099;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">SmartSearch.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="general-search.html">Smart Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurants.html">Restaurants Smart Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cosmetics.html">Cosmetics Smart Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Banner Section -->
+  <section class="banner text-center py-5">
+    <div class="container">
+      <h2 class="display-4 text-white">FAQ</h2>
+      <p class="lead text-white">Απαντήσεις σε όλες τις απορίες σας.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Συχνές Ερωτήσεις</h3>
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq1">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              Πώς λειτουργεί η αναζήτηση στο SmartSearch.com;
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1" data-parent="#faqAccordion">
+            <div class="accordion-body">
+              Το SmartSearch.com χρησιμοποιεί τη μηχανή αναζήτησης της Google για να προσφέρει στοχευμένα αποτελέσματα αναζήτησης.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq2">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Είναι το SmartSearch.com δωρεάν;
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+            <div class="accordion-body">
+              Ναι, η χρήση του SmartSearch είναι απολύτως δωρεάν!
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq3">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Ποιες ιστοσελίδες χρησιμοποιεί το Cosmetics Smart Search;
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+            <div class="accordion-body">
+              Το Cosmetics Smart Search χρησιμοποιεί τις ιστοσελίδες:
+              <ul class="faq-list">
+                <li><a href="https://www.kikocosmetics.com/en-us/">Kiko Cosmetics</a></li>
+                <li><a href="https://www.nyxcosmetics.com/">NYX Cosmetics</a></li>
+                <li><a href="https://www.maccosmetics.com/">MAC Cosmetics</a></li>
+                <li><a href="https://www.ulta.com/">Ulta</a></li>
+                <li><a href="https://www.sephora.com/">Sephora</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq4">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Ποιες ιστοσελίδες χρησιμοποιεί το Restaurants Smart Search;
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+            <div class="accordion-body">
+              Το Restaurants Smart Search χρησιμοποιεί τις ιστοσελίδες:
+              <ul class="faq-list">
+                <li><a href="https://www.tripadvisor.com.gr/Restaurants">TripAdvisor</a></li>
+                <li><a href="https://www.wolt.com/el/grc">Wolt</a></li>
+                <li><a href="https://www.e-food.gr/">e-Food</a></li>
+                <li><a href="https://www.xo.gr/search/?what=%CE%B5%CF%83%CF%84%CE%B9%CE%B1%CF%84%CF%8C%CF%81%CE%B9%CE%B1">xo.gr</a></li>
+                <li><a href="https://box.gr/">Box.gr</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faq5">
+            <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Χρησιμοποιεί το SmartSearch.com άλλες μηχανές αναζήτησης;
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+            <div class="accordion-body">
+              Ναι, το SmartSearch.com χρησιμοποιεί τη μηχανή αναζήτησης της Google για την αναζήτηση πληροφοριών.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>2024 &copy; SmartSearch.com. Website Designed by Athina Tsironi</p>
+    </div>
+  </footer>
+
+  <!-- External JS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

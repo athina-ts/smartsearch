@@ -1,0 +1,250 @@
+/* =========================
+   Καθολικά Στυλ
+========================= */
+/* Εφαρμογή user-select παντού */
+* {
+  user-select: none;
+}
+
+/* Εξαίρεση για συγκεκριμένα στοιχεία, π.χ. φόρμες */
+input, textarea {
+  user-select: text;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Για πιο σταθερή διάταξη */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: left; /* Στοίχιση κειμένου προς τα αριστερά */
+}
+
+a {
+  color: #5f0099;
+  text-decoration: none;
+}
+a:hover {
+  color: #5f0099;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+h4, h5 {
+  font-weight: 600;
+}
+h6 {
+  font-weight: 500;
+}
+
+.white {
+  color: #ffffff !important;
+}
+.black {
+  color: #000000;
+}
+
+/* =========================
+   Navbar Στυλ
+========================= */
+.navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 50px;
+  line-height: 50px;
+  background: transparent;
+  z-index: 1030;
+  text-align: left; /* Στοίχιση προς τα αριστερά */
+}
+
+.navbar .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: left;
+}
+
+.navbar .nav-item a:hover {
+  color: #5f0099;
+}
+
+.navbar-style2 .active:after, .navbar-style2 .nav-link:after {
+  display: none;
+}
+
+/* =========================
+   Banner Στυλ
+========================= */
+.banner {
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  padding: 100px 0;
+  position: relative;
+  text-align: left;
+}
+
+.banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/pattern.png);
+}
+
+/* =========================
+   Περιοχή Αναζήτησης
+========================= */
+.search-box {
+  display: flex;
+  justify-content: flex-start; /* Στοίχιση προς τα αριστερά */
+  padding: 20px 0;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.gcse-search {
+  width: 100%;
+}
+
+/* =========================
+   Περιοχή Αναζήτησης
+========================= */
+{
+	<script async src="https://cse.google.com/cse.js?cx=b7b8785df029848a8">
+</script>
+<div class="gcse-search"></div>
+}
+
+/* =========================
+   Περιοχή Εστιατορίων
+========================= */
+.restaurants-banner {
+  background-color: #f8c291; /* Ανοιχτό καφέ */
+  padding: 50px;
+  text-align: left; /* Στοίχιση προς τα αριστερά */
+  color: white;
+}
+
+.restaurants-banner h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* =========================
+   Περιοχή Καλλυντικών
+========================= */
+.cosmetics-banner {
+  background-color: #6a89cc; /* Ανοιχτό μπλε */
+  padding: 50px;
+  text-align: left; /* Στοίχιση προς τα αριστερά */
+  color: white;
+}
+
+.cosmetics-banner h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* =========================
+   Στοίχιση Περιγραφών
+========================= */
+p, div, span, article, .description, .content {
+  text-align: left;
+}
+
+.description, .content {
+  display: block;
+  margin: 0;
+}
+
+/* =========================
+   Απόκρυψη του Clear Button
+========================= */
+.gsc-clear-button {
+  display: none;
+}
+
+/* =========================
+   Responsive Στυλ
+========================= */
+@media all and (max-width: 991px) {
+  .navbar .navbar-collapse {
+    background: rgb(213, 198, 221);
+    color: #fff !important;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .navbar .navbar-nav > li > a {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    background-color: #7a60ff;
+  }
+
+  .banner {
+    padding: 80px 20px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .search-box {
+    flex-direction: column; /* Κεντράρισμα σε στήλες */
+  }
+
+  .gcse-search {
+    width: 80%;
+  }
+
+  .gsc-search-button {
+    margin-top: 10px;
+  }
+
+  .restaurants-banner, .cosmetics-banner {
+    padding: 30px;
+  }
+
+  .restaurants-banner h2, .cosmetics-banner h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .banner {
+    padding: 60px 15px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  .footer-copy p {
+    font-size: 10px;
+  }
+}
